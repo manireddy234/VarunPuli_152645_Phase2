@@ -37,11 +37,11 @@ public static Connection getConnection()
 			con=DriverManager.getConnection(url,username,password);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			System.out.println(e.getMessage());
 		}
 	} catch (ClassNotFoundException e) {
 		// TODO Auto-generated catch block
-		e.printStackTrace();
+		System.out.println(e.getMessage());
 	}
 	return con;
 }
